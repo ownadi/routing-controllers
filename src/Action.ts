@@ -1,3 +1,5 @@
+import { Context } from 'koa';
+
 /**
  * Controller action properties.
  */
@@ -17,7 +19,7 @@ export interface Action {
      * Content in which action is executed.
      * Koa-specific property.
      */
-    context?: any;
+    context?: Context;
 
     /**
      * "Next" function used to call next middleware.
